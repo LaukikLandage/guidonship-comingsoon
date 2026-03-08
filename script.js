@@ -20,13 +20,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     /* ===== Navbar Scroll Effect ===== */
     const navbar = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 50) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
+    if (navbar) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+    }
 
     /* ===== Countdown Timer ===== */
     // Set launch date to 19 March 2026

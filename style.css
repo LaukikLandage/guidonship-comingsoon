@@ -263,6 +263,28 @@ body {
     width: 100%;
 }
 
+.center-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.center-logo-img {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    object-fit: contain;
+}
+
+.center-logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+}
+
 .hero-badge {
     display: inline-block;
     font-size: 0.75rem;
